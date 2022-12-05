@@ -1,0 +1,21 @@
+<h1>tareas</h1>
+
+{% for task in tasks %}
+
+<div>
+<h3>{{task.title}}</h3>
+
+{% if task.done == False %}
+<p> Tarea Pendiente ⏰</p>
+{% else %}
+<p> Hecho ✅</p>
+{% endif %}
+
+<P>{{task.description}}</P>
+<P>Pertenece al proyecto: {{task.project}}</P>
+
+<button>Update 🆙</button>
+<button>Delete❌</button>
+</div>
+
+{% endfor %}
