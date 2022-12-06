@@ -1,3 +1,8 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+
+
 <h1>Proyects</h1>
 
 {% for project in projects %}
@@ -5,3 +10,5 @@
 {{project.name}}
 </li>
 {% endfor %}
+
+{% endblock %}
